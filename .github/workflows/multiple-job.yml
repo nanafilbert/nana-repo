@@ -31,7 +31,7 @@ jobs:
         run: grep -i "dragon" dragon.txt
 
   deploy: 
-    needs: test
+    needs: build
     runs-on: ubuntu-latest
     steps: 
       - name: Read File
